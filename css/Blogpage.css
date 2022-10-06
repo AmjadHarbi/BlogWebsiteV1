@@ -1,0 +1,45 @@
+
+
+#container{
+  
+    display:grid;
+    grid-template-columns: 300px 300px 500px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: 
+      "hd hd hd i i i "
+      "main main main sd sd sd "
+      "ft ft ft ft ft ft";
+    grid-gap: 10px;
+      /* border: 1px solid grey; */
+}
+
+.header {
+    grid-area: hd;
+    border: 1px solid grey;
+  }
+
+  .img{
+    grid-area: i;
+    width: 300px;
+    height: auto;
+  }
+
+main{
+    grid-area: main;
+    border: 1px solid grey;
+  }
+
+.forms{
+  text-align: center;
+  }
+
+.sidebar{
+    grid-area: sd;
+    border: 1px solid grey;
+  }
+
+footer{
+    grid-area: ft;
+    border: 1px solid grey;
+}
+
