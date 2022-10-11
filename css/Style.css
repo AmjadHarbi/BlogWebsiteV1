@@ -24,3 +24,11 @@ button{
     font-size: 100%;
 }
 
+.red{
+    color: rgb(226, 105, 105);
+}
+
+figcaption{
+    text-align: left;
+    margin-left: 5px;
+}

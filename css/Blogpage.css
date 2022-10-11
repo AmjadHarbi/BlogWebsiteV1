@@ -2,15 +2,24 @@
 
 #container{
   
-    display:grid;
+    /* display:grid;
     grid-template-columns: 300px 300px 500px;
     grid-template-rows: 250px 600px;
     grid-template-areas: 
       "hd hd hd i i i "
       "main main main sd sd sd "
       "ft ft ft ft ft ft";
-    grid-gap: 10px;
+    grid-gap: 10px; */
       /* border: 1px solid grey; */
+
+      display: grid;
+      grid-template-columns: 300px 300px 400px;
+      grid-template-rows: 250px 600px;
+      grid-template-areas: 
+      "hd hd i  "
+      "main main sd "
+      "ft ft ft";
+
 }
 
 .header {
@@ -38,8 +47,64 @@ main{
     border: 1px solid grey;
   }
 
+ul{
+  width: 300px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+
 footer{
     grid-area: ft;
     border: 1px solid grey;
 }
 
+
+@media (max-width: 320px) {
+  #container{
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows: 250px ;
+    grid-template-areas: 
+    "i"
+    "hd  "
+    "main "
+    "sd"
+    "ft ";
+    /* grid-gap: 10px; */
+      /* border: 1px solid grey; */
+}
+p{
+  font-size: xx-small;
+}
+}
+
+@media (min-width: 901px) {
+ #container{
+  grid-template-columns: 300px 300px 500px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: 
+      "hd hd hd i i i "
+      "main main main sd sd sd "
+      "ft ft ft ft ft ft";
+
+ }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  #container{
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: 
+      "hd i"
+      "main sd"
+      "ft";
+    /* grid-gap: 10px; */
+      /* border: 1px solid grey; */
+}
+p{
+
+}
+}
