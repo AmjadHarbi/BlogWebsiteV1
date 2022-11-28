@@ -1,12 +1,14 @@
 
 
 
+
 .container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 10%;
+    margin: auto;
 }
 
 .card{
@@ -14,6 +16,7 @@
     height: 430px;
     border: 1px solid gray;
     margin-top: 5%;
+    margin: auto;
 }
 
 img{
@@ -42,7 +45,7 @@ a{
         height: 230px;
     }
     p{
-        font-size: xx-small;
+        font-size: medium;
     }
 }
 
@@ -70,6 +73,6 @@ a{
         height: 380px;
     }
     p{
-        font-size: small;
+        font-size: medium;
     }
 }
